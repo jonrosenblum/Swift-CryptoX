@@ -32,30 +32,12 @@ class CoinDataService {
         }
         
         // Initiate a data task publisher for the URL
-        coinSubscription = URLSession.shared.dataTaskPublisher(for: url)
-            .subscribe(on: DispatchQueue.global(qos: .default)) // Perform the task on a background queue
-            .tryMap { (output) -> Data in
-                // Check the HTTP response for errors
-                guard let response = output.response as? HTTPURLResponse,
-                      response.statusCode >= 200 && response.statusCode < 300 else {
-                    throw URLError(.badServerResponse)
-                }
-                // If no errors, return the data
-                return output.data
-            }
-            .receive(on: DispatchQueue.main) // Switch back to the main queue for further processing
+        coinSubscription = NetworkingManager.download(url: url)
             .decode(type: [CoinModel].self, decoder: JSONDecoder()) // Decode the JSON data into an array of CoinModel objects
-            .sink { (completion) in
-                switch completion {
-                case .finished:
-                    break // Subscription completed successfully
-                case .failure(let error):
-                    print(error.localizedDescription) // Print any error that occurred
-                }
-            } receiveValue: { [weak self] (returnedCoins) in
-                // Update the allCoins array with the fetched data and cancel the subscription
+            .sink(receiveCompletion: NetworkingManager.handleCompletion, receiveValue: { [weak self] (returnedCoins) in
                 self?.allCoins = returnedCoins
                 self?.coinSubscription?.cancel()
-            }
+            })
+
     }
 }

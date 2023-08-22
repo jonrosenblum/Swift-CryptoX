@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF389FAB2A9521DC007695DA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF389FAA2A9521DC007695DA /* NetworkingManager.swift */; };
 		EFE7D9462A93E1A4000B2488 /* SwiftCryptoXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D9452A93E1A4000B2488 /* SwiftCryptoXApp.swift */; };
 		EFE7D9482A93E1A4000B2488 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D9472A93E1A4000B2488 /* ContentView.swift */; };
 		EFE7D94D2A93E1A5000B2488 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFE7D94C2A93E1A5000B2488 /* Preview Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF389FAA2A9521DC007695DA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		EFE7D9422A93E1A4000B2488 /* SwiftCryptoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCryptoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFE7D9452A93E1A4000B2488 /* SwiftCryptoXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCryptoXApp.swift; sourceTree = "<group>"; };
 		EFE7D9472A93E1A4000B2488 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF389FA92A95217D007695DA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EF389FAA2A9521DC007695DA /* NetworkingManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		EFE7D9392A93E1A4000B2488 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE7D9452A93E1A4000B2488 /* SwiftCryptoXApp.swift */,
+				EF389FA92A95217D007695DA /* Utilities */,
 				EFE7D9552A93E396000B2488 /* Extensions */,
 				EFE7D98C2A950C95000B2488 /* Services */,
 				EFE7D9682A93F2B4000B2488 /* Models */,
@@ -255,6 +266,7 @@
 				EFE7D98E2A950CAE000B2488 /* CoinDataService.swift in Sources */,
 				EFE7D9792A94F402000B2488 /* Double.swift in Sources */,
 				EFE7D97C2A94F402000B2488 /* PreviewProvider.swift in Sources */,
+				EF389FAB2A9521DC007695DA /* NetworkingManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
