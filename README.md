@@ -1,5 +1,4 @@
 <p align="center">
-    <a href=""><img src="https://img.shields.io/github/license/{jonrosenblum}/{Swift-CryptoX}.svg" /></a>
     <a href=""><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /></a>
     <a href=""><img src="https://badgen.net/github/commits/jonrosenblum/Swift-CryptoX" /></a>
     <br>
