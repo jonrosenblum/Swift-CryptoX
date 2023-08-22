@@ -20,6 +20,8 @@
 		EFE7D9792A94F402000B2488 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D9732A94F402000B2488 /* Double.swift */; };
 		EFE7D97C2A94F402000B2488 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D9762A94F402000B2488 /* PreviewProvider.swift */; };
 		EFE7D9852A94F41C000B2488 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D97F2A94F41C000B2488 /* CoinModel.swift */; };
+		EFE7D9892A950658000B2488 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D9882A950658000B2488 /* HomeViewModel.swift */; };
+		EFE7D98E2A950CAE000B2488 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE7D98D2A950CAE000B2488 /* CoinDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		EFE7D9732A94F402000B2488 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		EFE7D9762A94F402000B2488 /* PreviewProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		EFE7D97F2A94F41C000B2488 /* CoinModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		EFE7D9882A950658000B2488 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EFE7D98D2A950CAE000B2488 /* CoinDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 			children = (
 				EFE7D9452A93E1A4000B2488 /* SwiftCryptoXApp.swift */,
 				EFE7D9552A93E396000B2488 /* Extensions */,
+				EFE7D98C2A950C95000B2488 /* Services */,
 				EFE7D9682A93F2B4000B2488 /* Models */,
 				EFE7D9592A93E72D000B2488 /* Core */,
 				EFE7D9472A93E1A4000B2488 /* ContentView.swift */,
@@ -129,6 +134,7 @@
 		EFE7D95C2A93E752000B2488 /* ViewsModels */ = {
 			isa = PBXGroup;
 			children = (
+				EFE7D9882A950658000B2488 /* HomeViewModel.swift */,
 			);
 			path = ViewsModels;
 			sourceTree = "<group>";
@@ -156,6 +162,14 @@
 				EFE7D97F2A94F41C000B2488 /* CoinModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EFE7D98C2A950C95000B2488 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFE7D98D2A950CAE000B2488 /* CoinDataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +249,10 @@
 				EFE7D9462A93E1A4000B2488 /* SwiftCryptoXApp.swift in Sources */,
 				EFE7D9772A94F402000B2488 /* Color.swift in Sources */,
 				EFE7D9852A94F41C000B2488 /* CoinModel.swift in Sources */,
+				EFE7D9892A950658000B2488 /* HomeViewModel.swift in Sources */,
 				EFE7D9662A93EF77000B2488 /* CircleButtonAnimationView.swift in Sources */,
 				EFE7D9782A94F402000B2488 /* Date.swift in Sources */,
+				EFE7D98E2A950CAE000B2488 /* CoinDataService.swift in Sources */,
 				EFE7D9792A94F402000B2488 /* Double.swift in Sources */,
 				EFE7D97C2A94F402000B2488 /* PreviewProvider.swift in Sources */,
 			);
