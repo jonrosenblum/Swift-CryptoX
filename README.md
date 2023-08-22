@@ -3,7 +3,6 @@
     <a href=""><img src="https://badgen.net/github/commits/jonrosenblum/Swift-CryptoX" /></a>
     <br>
     <a href=""><img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" /></a>
-    <a href=""><img src="" /></a>
     <a href=""><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /></a>
     <br>
     <a href=""><img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" /></a>
